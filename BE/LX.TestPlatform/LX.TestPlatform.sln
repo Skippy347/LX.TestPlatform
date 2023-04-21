@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LX.TestPlatform", "LX.TestPlatform\LX.TestPlatform.csproj", "{FED75364-5E99-4E09-9B11-DAD596A11972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED75364-5E99-4E09-9B11-DAD596A11972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED75364-5E99-4E09-9B11-DAD596A11972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED75364-5E99-4E09-9B11-DAD596A11972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED75364-5E99-4E09-9B11-DAD596A11972}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
