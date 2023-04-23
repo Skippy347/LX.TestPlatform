@@ -6,7 +6,9 @@
   width: 100%;
   height: 100vh;
 
-  background: url("/assets/HomePageImages/intro.jpg") center no-repeat;
+  background-image: url("/assets/HomePageImages/intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
