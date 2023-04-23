@@ -1,0 +1,33 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: calc(100vh - 70px);
+
+  background-color: #fff;
+}
+
+.intro_inner {
+  width: 100%;
+  max-width: 440px;
+
+  margin: 0 auto;
+
+  > .intro_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26.4px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: #333333;
+  }
+
+  > .intro_subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+
+    margin: 9px 0px 15px 0px;
+  }
+}
