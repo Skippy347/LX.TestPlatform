@@ -52,6 +52,8 @@
         "tsx": "never"
       }
     ],
+    "react/jsx-uses-react": ["off"],
+    "react/react-in-jsx-scope": ["off"],
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": ["error"],
     "react-hooks/rules-of-hooks": "error"
