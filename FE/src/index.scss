@@ -1,43 +1,43 @@
 body {
-  font-size: 15px;
-  line-height: 1.6;
+	font-size: 15px;
+	line-height: 1.6;
 
-  font-family: "Inter", sans-serif;
-  background: #000;
-  margin: 0;
+	font-family: "Inter", sans-serif;
+	background: #000;
+	margin: 0;
 
-  color: #fff;
+	color: #fff;
 }
 
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  border: 0;
+	border: 0;
 
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 img {
-  vertical-align: top;
+	vertical-align: top;
 }
 
 ul,
 ol,
 li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 h1,
@@ -46,19 +46,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 input {
-  border: none;
-  outline: none;
-}
-
-.container {
-  width: 100%;
-  max-width: 1410px;
-
-  margin: 0 auto;
-
+	border: none;
+	outline: none;
 }
