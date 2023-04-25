@@ -1,0 +1,7 @@
+namespace LX.TestPlatform.DTO.User;
+
+public class CreateUpdateUserDto
+{
+    public string Email { get; set; }
+    public string Password { get; set; }
+}
