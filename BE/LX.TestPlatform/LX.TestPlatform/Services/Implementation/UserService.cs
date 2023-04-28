@@ -16,7 +16,7 @@ public class UserService : IUserService
         _userRepository = userRepository;
     }
 
-    public async Task CreateUserAsync(CreateUpdateUserDto userDto)
+    public async Task CreateUserAsync(CreateUserDto userDto)
     {
         var user = userDto.MapCreateUpdateToEntity();
 

@@ -5,6 +5,7 @@ using LX.TestPlatform.Interfaces;
 using LX.TestPlatform.Repositories;
 using LX.TestPlatform.Services.Implementation;
 using LX.TestPlatform.Services.Interfaces;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 namespace LX.TestPlatform
@@ -34,7 +35,7 @@ namespace LX.TestPlatform
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy", builder => 
+                options.AddPolicy("CorsPolicy", builder =>
                     builder.AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader());
@@ -47,10 +48,18 @@ namespace LX.TestPlatform
             {
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
             });
-            
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                    options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                });
+
             services.AddScoped<IBaseRepository<User>, UserRepository>();
-            
+
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAccountService, AccountService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -62,12 +71,12 @@ namespace LX.TestPlatform
 
             app.UseRouting();
             app.UseStaticFiles();
-            
+
             app.UseCors("CorsPolicy");
-            
+
             app.UseAuthorization();
             app.UseAuthentication();
-            
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }

@@ -5,7 +5,7 @@ namespace LX.TestPlatform.MappingProfiles.UserMappingProfile;
 
 public static class UserDtoMapping
 {
-    public static User MapCreateUpdateToEntity(this CreateUpdateUserDto userDto)
+    public static User MapCreateUpdateToEntity(this CreateUserDto userDto)
     {
         return userDto == null
             ? null

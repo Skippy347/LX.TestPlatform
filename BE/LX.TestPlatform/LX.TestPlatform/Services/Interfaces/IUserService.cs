@@ -5,7 +5,7 @@ namespace LX.TestPlatform.Services.Interfaces;
 
 public interface IUserService
 {
-    Task CreateUserAsync(CreateUpdateUserDto userDto);
+    Task CreateUserAsync(CreateUserDto userDto);
     Task<User?> GetUserByIdAsync(Guid id);
     Task<List<User>> GetAllUsersAsync();
     ValueTask DeleteUserAsync(Guid id);
